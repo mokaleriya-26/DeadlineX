@@ -327,7 +327,7 @@
             gap: 4px;
             padding: 3px 9px;
             border-radius: 50px;
-            font-size: 0.7rem;
+            font-size: 1rem;
             font-weight: 700;
             letter-spacing: 0.03em;
             white-space: nowrap;
