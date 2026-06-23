@@ -38,36 +38,22 @@
             color: var(--text-primary);
             min-height: 100vh;
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1.2fr 0.8fr;
         }
 
         /* ── LEFT PANEL ── */
         .left-panel {
-            background: linear-gradient(160deg, #0e0e10 0%, #1a1a1f 100%);
+            background-image: url('{{ asset('bgp.png') }}');
+            background-size: 94%;
+            background-position: left;
+            background-attachment: fixed;
+            background-color: var(--bg-base);
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             padding: 48px;
             position: relative;
             overflow: hidden;
-            border-right: 1px solid var(--border);
-        }
-
-        /* Animated blobs */
-        .blob {
-            position: absolute;
-            border-radius: 50%;
-            filter: blur(80px);
-            opacity: 0.18;
-            animation: drift 8s ease-in-out infinite alternate;
-        }
-        .blob-1 { width: 380px; height: 380px; background: #ef4444; top: -80px; left: -100px; animation-delay: 0s; }
-        .blob-2 { width: 280px; height: 280px; background: #f97316; top: 40%; right: -60px; animation-delay: -3s; }
-        .blob-3 { width: 220px; height: 220px; background: #eab308; bottom: 40px; left: 20%; animation-delay: -5s; }
-
-        @keyframes drift {
-            from { transform: translate(0, 0) scale(1); }
-            to   { transform: translate(20px, 30px) scale(1.08); }
         }
 
         .left-brand {
@@ -79,21 +65,28 @@
         }
 
         .brand-icon {
-            width: 48px;
-            height: 48px;
-            background: linear-gradient(135deg, #c0392b, #e74c3c);
-            border-radius: 12px;
+            width: 80px;
+            height: 80px;
+            border-radius: 15px;
+            overflow: hidden;
+            background: linear-gradient(145deg, #c0392b, #e74c3c);
+            box-shadow: 0 6px 24px rgba(231,76,60,0.45);
+            flex-shrink: 0;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 22px;
-            box-shadow: 0 4px 20px rgba(231,76,60,0.4);
+        }
+        .brand-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .brand-name {
-            font-size: 1.1rem;
+            font-size: 40px;
             font-weight: 700;
-            letter-spacing: -0.02em;
+            letter-spacing: -0.01em;
+            font-family: "serif";
         }
 
         .left-content {
@@ -102,7 +95,7 @@
         }
 
         .left-headline {
-            font-size: 2.6rem;
+            font-size: 80px;
             font-weight: 800;
             letter-spacing: -0.04em;
             line-height: 1.1;
@@ -110,7 +103,6 @@
         }
 
         .left-headline .accent-red   { color: var(--critical); }
-        .left-headline .accent-orange { color: var(--high); }
         .left-headline .accent-green  { color: var(--low); }
 
         .left-sub {
@@ -164,21 +156,33 @@
             align-items: center;
             justify-content: center;
             padding: 40px 32px;
-            background: var(--bg-base);
-            overflow-y: auto;
+            background-image: url('{{ asset('bgr.png') }}');
+            background-size: 100%;
+            background-position: left;
+            background-attachment: fixed;
+            background-color: var(--bg-base);
         }
 
         .auth-card {
-            width: 100%;
-            max-width: 420px;
+            width: 500px;
+            height: 500px;
+            border-width: 2px;
+            border-style: solid;
+            border-color: #6e0808ff;
+            background: linear-gradient(145deg, rgba(22,22,24,0.85) 0%, rgba(239,68,68,0.08) 100%);
+            border-radius: 15px;
+            padding: 50px;
+            box-shadow: 0 6px 24px rgba(255,255,255,0.1);
+            position: relative;
+            z-index: 1;
         }
 
         .auth-header {
-            margin-bottom: 30px;
+            margin-bottom: 36px;
         }
 
         .auth-title {
-            font-size: 1.8rem;
+            font-size: 40px;
             font-weight: 800;
             letter-spacing: -0.03em;
             margin-bottom: 6px;
@@ -188,6 +192,16 @@
             font-size: 0.88rem;
             color: var(--text-secondary);
         }
+
+        .auth-subtitle a {
+            color: var(--text-primary);
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 1px;
+            transition: border-color 0.2s;
+        }
+        .auth-subtitle a:hover { border-color: var(--text-primary); }
 
         /* Form */
         .form-group {
@@ -325,19 +339,17 @@
 
     <!-- LEFT PANEL -->
     <div class="left-panel">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
-        <div class="blob blob-3"></div>
-
         <div class="left-brand">
-            <div class="brand-icon">⏰</div>
-            <span class="brand-name">Deadline Panic Tracker</span>
+            <div class="brand-icon">
+                <img src="{{ asset('logo.png') }}" alt="deadx_logo">
+            </div>
+            <span class="brand-name">DeadX</span>
         </div>
 
         <div class="left-content">
             <h1 class="left-headline">
                 Resetting<br>
-                your <span class="accent-orange">password.</span><br>
+                your <span class="accent-red">password.</span><br>
                 Secure your <span class="accent-green">tracker.</span>
             </h1>
             <p class="left-sub">
