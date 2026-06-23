@@ -118,3 +118,9 @@ resources/views/
 ---
 
 ## 🤖 Results
+<img width="2940" height="1752" alt="image" src="https://github.com/user-attachments/assets/bb7a554b-eb4e-40bb-b738-67ebdbb5bd7f" />
+<img width="2940" height="1752" alt="image" src="https://github.com/user-attachments/assets/9ed3fb59-0ea0-464e-bcca-25955b54792e" />
+<img width="2940" height="1752" alt="image" src="https://github.com/user-attachments/assets/5c069c89-d647-4338-9a53-01bd3ff4c104" />
+
+
+
