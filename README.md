@@ -31,6 +31,29 @@
 
 ---
 
+## 🤖 Results
+
+Sign Up
+<img width="1470" height="869" alt="Sign up" src="https://github.com/user-attachments/assets/d6a21fc9-fb1b-4cbc-b4c1-8f8d0f32c3f0" />
+
+Login
+<img width="1470" height="869" alt="Login" src="https://github.com/user-attachments/assets/f343701d-f723-4657-8f86-79a74800cd37" />
+
+Forget Password
+<img width="1470" height="869" alt="Forget password" src="https://github.com/user-attachments/assets/8d09b13a-dd49-4504-8b20-05eca9060e43" />
+
+Home page
+<img width="1470" height="869" alt="home page 1" src="https://github.com/user-attachments/assets/d9c718d8-8a00-4d2b-b5b8-38769f04063d" />
+<img width="1470" height="869" alt="home page 2" src="https://github.com/user-attachments/assets/97cbfe4a-a760-474a-8b5d-9db2f3468f67" />
+
+Focus Mode
+<img width="1470" height="869" alt="Focus mode" src="https://github.com/user-attachments/assets/31a51d26-0cf0-45a9-8819-9e0ead7e0dc8" />
+
+Add New Task
+<img width="1470" height="869" alt="New task" src="https://github.com/user-attachments/assets/3a4ce38b-ad67-4a32-9b5f-c5ed4d0cb069" />
+
+---
+
 ## ⚙️ Quick Setup
 
 ### Prerequisites
@@ -114,13 +137,3 @@ resources/views/
 └── tasks/
     └── index.blade.php            # Core Dashboard blade template (Vanilla CSS/HTML/JS)
 ```
-
----
-
-## 🤖 Results
-<img width="2940" height="1752" alt="image" src="https://github.com/user-attachments/assets/bb7a554b-eb4e-40bb-b738-67ebdbb5bd7f" />
-<img width="2940" height="1752" alt="image" src="https://github.com/user-attachments/assets/9ed3fb59-0ea0-464e-bcca-25955b54792e" />
-<img width="2940" height="1752" alt="image" src="https://github.com/user-attachments/assets/5c069c89-d647-4338-9a53-01bd3ff4c104" />
-
-
-
