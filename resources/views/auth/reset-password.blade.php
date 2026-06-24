@@ -362,7 +362,9 @@
                 <div class="stat-pill"><div class="pill-dot green"></div> 😩 LOW — 4+ days</div>
             </div>
         </div>
-
+        <div class="brand-name">
+            5024137 - Riya Pradeep Mokale
+        </div>
         <div class="left-footer">
             © {{ date('Y') }} Deadline Panic Tracker — Built with Laravel Herd
         </div>

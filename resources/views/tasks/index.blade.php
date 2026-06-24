@@ -732,6 +732,7 @@
     {{-- ══════════════════════════════
          TOP NAV (user/logout)
     ══════════════════════════════ --}}
+    
     <nav class="top-nav">
         @auth
             <span class="nav-user">{{ auth()->user()->name }}</span>
@@ -751,7 +752,9 @@
          MAIN CONTENT
     ══════════════════════════════ --}}
     <div class="app-wrapper">
-
+        <div class="brand-name">
+            5024137 - Riya Pradeep Mokale
+        </div>
         {{-- PAGE HEADER: logo + title + buttons --}}
         <div class="page-header">
             <div class="header-left">
